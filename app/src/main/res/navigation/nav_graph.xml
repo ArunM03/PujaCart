@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/shopFragment">
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.shop.android.pujacart.ui.bottom.CartFragment"
+        android:label="My Cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_selectAddressFragment"
+            app:destination="@id/selectAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.shop.android.pujacart.ui.bottom.category.CategoryFragment"
+        android:label="Categories" >
+        <action
+            android:id="@+id/action_categoryFragment_to_subCategoryFragment"
+            app:destination="@id/subCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.shop.android.pujacart.ui.bottom.SearchFragment"
+        android:label="Search" >
+        <action
+            android:id="@+id/action_searchFragment_to_viewProductFragment"
+            app:destination="@id/viewProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.shop.android.pujacart.ui.bottom.ShopFragment"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_shopFragment_to_viewProductFragment"
+            app:destination="@id/viewProductFragment" />
+        <action
+            android:id="@+id/action_shopFragment_to_subCategoryFragment"
+            app:destination="@id/subCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subCategoryFragment"
+        android:name="com.shop.android.pujacart.ui.bottom.category.SubCategoryFragment"
+        android:label="SubCategoryFragment" >
+        <action
+            android:id="@+id/action_subCategoryFragment_to_itemsBySubCatFragment"
+            app:destination="@id/itemsBySubCatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemsBySubCatFragment"
+        android:name="com.shop.android.pujacart.ui.bottom.items.ItemsBySubCatFragment"
+        android:label="ItemsBySubCatFragment" >
+        <action
+            android:id="@+id/action_itemsBySubCatFragment_to_viewProductFragment"
+            app:destination="@id/viewProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.shop.android.pujacart.ui.navigationdrawer.MyProfileFragment"
+        android:label="My Profile" >
+        <action
+            android:id="@+id/action_myProfileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myOrdersFragment"
+        android:name="com.shop.android.pujacart.ui.navigationdrawer.orders.MyOrdersFragment"
+        android:label="Orders History" >
+        <action
+            android:id="@+id/action_myOrdersFragment_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewProductFragment"
+        android:name="com.shop.android.pujacart.ui.bottom.items.ViewProductFragment"
+        android:label="Product Details" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.shop.android.pujacart.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.shop.android.pujacart.ui.login.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.shop.android.pujacart.ui.login.AddAddressFragment"
+        android:label="Add Address" >
+        <action
+            android:id="@+id/action_addAddressFragment_to_selectAddressFragment"
+            app:destination="@id/selectAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectAddressFragment"
+        android:name="com.shop.android.pujacart.ui.bottom.order.SelectAddressFragment"
+        android:label="Select Address" >
+        <action
+            android:id="@+id/action_selectAddressFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.shop.android.pujacart.ui.navigationdrawer.orders.OrderDetailsFragment"
+        android:label="Order Details" />
+</navigation>

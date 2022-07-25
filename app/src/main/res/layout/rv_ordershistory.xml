@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp"
+    android:layout_margin="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Date : 12/4/2022"
+            android:id="@+id/tv_date"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_date"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Order No : "
+            android:id="@+id/tv_orderno"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_orderno"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_orderno_data"
+            tools:text="434543252"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="@id/tv_orderno"
+            app:layout_constraintEnd_toStartOf="@id/tv_items_data"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_orderno"
+            android:layout_marginEnd="16dp"
+            android:text="Items : "
+            android:id="@+id/tv_items"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_items"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_items_data"
+            tools:text="2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="end"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toEndOf="@id/tv_orderno_data"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_items_data"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:text="Total Price : "
+            android:id="@+id/tv_totalprice"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_totalprice"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_totalprice_data"
+            tools:text="515"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="@id/tv_orderno"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_items_data"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Payable Amount :"
+            android:id="@+id/tv_payableamount"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_payableamount"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_payableamount_data"
+            tools:text="515"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_totalprice_data"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:text="Payment : "
+            android:id="@+id/tv_payment"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_payment"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:id="@+id/tv_payment_data"
+            tools:text="Pay Now"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="@id/tv_orderno"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_payment"
+            android:layout_marginEnd="16dp"
+            android:text="Status :"
+            android:id="@+id/tv_orderstatus"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_orderstatus"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_orderstatus_data"
+            tools:text="Order in Progress"
+            android:textStyle="bold"
+            android:gravity="end"
+            app:layout_constraintWidth_percent="0.5"
+            android:textColor="@color/secondary_500"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

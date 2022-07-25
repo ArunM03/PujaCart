@@ -1,0 +1,31 @@
+package com.shop.android.pujacart.data.item
+
+data class GetItemBySubCatResponseItem(
+    val Added: String,
+    val BrandID: Int,
+    val BrandName: String,
+    val DiscountPrice: String,
+    val OfferQtyTag: String,
+    val OfferSizeTag: String,
+    val PAvlQty: String,
+    val PCategory: String,
+    val PDescription: String,
+    val PGID: Int,
+    val PGroup: String,
+    val PImage: String,
+    val PPerCarton: String,
+    val PPriceTag: String,
+    val PSizeID: String,
+    val PSizeType: String,
+    val PSizeTypeSel: String,
+    val PSupplier: String,
+    val ProductCode: String,
+    val ProductID: Int,
+    val ProductName: String,
+    val ProductSizeTag: String,
+    val ProductTag: String,
+    val Remarks: String,
+    val Status: String,
+    val SubCategory: String,
+    val SupplierID: Int
+)

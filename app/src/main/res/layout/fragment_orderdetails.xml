@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/ct_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/cd_top_container"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Order No : "
+                android:id="@+id/tv_orderno"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_orderno"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:id="@+id/tv_orderno_data"
+                tools:text="434543252"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="@id/tv_orderno"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_orderno_data"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Date : "
+                android:id="@+id/tv_date"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_date"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:id="@+id/tv_date_data"
+                tools:text="434543252"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="@id/tv_orderno"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cd_top_container"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:id="@+id/tv_delivery_address"
+        android:text="Delivery Address :"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="@id/cd_top_container"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/cd_delivery_address"
+        app:layout_constraintTop_toBottomOf="@id/tv_delivery_address">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="District : "
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_district_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tv_district"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline3"
+                app:layout_constraintTop_toTopOf="@id/tv_district"
+                tools:text="Thanjavur" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="State : "
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_district" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_state_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/tv_state"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline3"
+                app:layout_constraintTop_toTopOf="@id/tv_state"
+                tools:text="Tamilnadu" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_postcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Postcode : "
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_state" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_postcode_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/tv_postcode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline3"
+                app:layout_constraintTop_toTopOf="@id/tv_postcode"
+                tools:text="614704" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Address : "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_postcode_data" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_address_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tv_address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline3"
+                app:layout_constraintTop_toTopOf="@id/tv_address"
+                tools:text="614704" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_contactno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Contact No : "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_address_data" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_contactno_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tv_contactno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideline3"
+                app:layout_constraintTop_toTopOf="@id/tv_contactno"
+                tools:text="614704" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cd_delivery_address"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:id="@+id/tv_products"
+        android:text="Products :"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="@id/cd_top_container"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_products"
+        android:id="@+id/rv_items"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintWidth_percent="0.5"
+        android:id="@+id/cd_bottom_container"
+        app:layout_constraintTop_toBottomOf="@id/rv_items">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Total Price : "
+                android:id="@+id/tv_totalprice"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_totalprice"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:id="@+id/tv_totalprice_data"
+                tools:text="434543252"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="@id/tv_totalprice"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_totalprice_data"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Total Discounts : "
+                android:id="@+id/tv_totaldiscount"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_totaldiscount"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:id="@+id/tv_totaldiscount_data"
+                tools:text="434543252"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="@id/tv_totalprice"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_totaldiscount_data"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Delivery Charge : "
+                android:id="@+id/tv_delivery_charge"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_delivery_charge"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:id="@+id/tv_deliverycharge_data"
+                tools:text="434543252"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="@id/tv_totalprice"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_deliverycharge_data"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Payable Amount : "
+                android:id="@+id/tv_payableamount"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_payableamount"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:id="@+id/tv_payableamount_data"
+                tools:text="434543252"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toStartOf="@id/tv_totalprice"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/progressbar"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

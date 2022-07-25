@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp"
+    android:layout_margin="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Product Name: "
+            android:id="@+id/tv_productname"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_productname"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_productname_data"
+            tools:text="Spl two"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="@id/tv_productname"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_productname_data"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:text="Product Size : "
+            android:id="@+id/tv_size"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_size"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_size_data"
+            tools:text="2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="@id/tv_size"
+            app:layout_constraintEnd_toStartOf="@id/tv_quantity_data"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_size_data"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:text="Unit Price : "
+            android:id="@+id/tv_unitprice"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_unitprice"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_unitprice_data"
+            tools:text="515"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="@id/tv_unitprice"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_productname_data"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Quantity :"
+            android:id="@+id/tv_quantity"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_quantity"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_quantity_data"
+            tools:text="2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_unitprice_data"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:text="Category : "
+            android:id="@+id/tv_category"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_category"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:id="@+id/tv_category_data"
+            tools:text="Spl. Pooja items"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toStartOf="@id/tv_brand_data"
+            app:layout_constraintStart_toStartOf="@id/tv_category"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sst_data"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Brand :"
+            android:id="@+id/tv_brand"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_brand"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_brand_data"
+            tools:text="2"
+            android:gravity="end"
+            android:textStyle="bold"
+            app:layout_constraintWidth_percent="0.4"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_size_data"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="SST :"
+            android:id="@+id/tv_sst"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_sst"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_sst_data"
+            tools:text="2"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

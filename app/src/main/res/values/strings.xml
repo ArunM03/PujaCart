@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PujaCart</string>
+    <string name="menu_shop">Shop</string>
+    <string name="menu_category">Categories</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_cart">My cart</string>
+    <string name="menu_myorders">My Orders</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_logout">Logout</string>
+</resources>
